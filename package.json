@@ -1,0 +1,12 @@
+{
+  "name": "jarvis-dist",
+  "version": "0.1.0",
+  "description": "Marketplace + plugin for the Jarvis build-conductor",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "validate:manifests": "node --test tests/manifests.test.js"
+  },
+  "license": "MIT"
+}
