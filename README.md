@@ -55,8 +55,19 @@ redistribute their code.**
 
 Jarvis itself is MIT licensed (see `LICENSE`).
 
-## Layer 2 (planned)
+## One-command install (npx)
 
-A one-command `npx jarvis-dist install` that installs Jarvis plus all three dependencies in a
-single step. Not shipped yet — for now, use the prerequisite commands above. v1 deliberately
-ships the conductor first and tests demand before building the multi-installer orchestrator.
+Prefer to set up everything at once? This installs Jarvis (marketplace + plugin) **and** any
+missing dependencies in a single command:
+
+```bash
+npx github:mrashed98/jarvis
+```
+
+It detects what you already have and installs only what's missing — so it's safe to re-run.
+By default it shows the plan and asks before changing anything.
+
+```bash
+npx github:mrashed98/jarvis --dry-run   # print the plan, change nothing
+npx github:mrashed98/jarvis --yes       # run without the confirmation prompt
+```

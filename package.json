@@ -4,6 +4,9 @@
   "description": "Marketplace + plugin for the Jarvis build-conductor",
   "type": "module",
   "private": true,
+  "bin": {
+    "jarvis": "bin/jarvis-install.js"
+  },
   "scripts": {
     "test": "node --test",
     "validate:manifests": "node --test tests/manifests.test.js"
