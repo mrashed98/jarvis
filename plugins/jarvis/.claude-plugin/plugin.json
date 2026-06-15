@@ -1,0 +1,11 @@
+{
+  "name": "jarvis",
+  "description": "Build conductor for Claude Code — sequences gstack (validate/review/QA/ship), GSD (spec), and superpowers (TDD build) into one gated pipeline.",
+  "version": "0.1.0",
+  "author": { "name": "mrashed98" },
+  "homepage": "https://github.com/mrashed98/jarvis",
+  "repository": "https://github.com/mrashed98/jarvis",
+  "license": "MIT",
+  "keywords": ["workflow", "orchestration", "conductor", "gsd", "gstack", "superpowers"],
+  "skills": "./skills/"
+}

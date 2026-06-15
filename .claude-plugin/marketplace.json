@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "jarvis",
+  "description": "Jarvis — a generalized build-conductor for Claude Code that sequences validate, spec, build, and ship across gstack, GSD, and superpowers.",
+  "owner": { "name": "mrashed98" },
+  "plugins": [
+    {
+      "name": "jarvis",
+      "description": "Personal build conductor: a gated validate, spec, build, ship pipeline across gstack, GSD, and superpowers.",
+      "author": { "name": "mrashed98" },
+      "category": "workflow",
+      "source": "./plugins/jarvis",
+      "homepage": "https://github.com/mrashed98/jarvis"
+    }
+  ]
+}
