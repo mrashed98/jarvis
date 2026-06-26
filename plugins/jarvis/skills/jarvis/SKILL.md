@@ -149,6 +149,11 @@ lines. Before pausing at a gate, make sure the scratchpad's `current_phase` and
 'Jarvis, resume' to continue with a fresh context." This is the main context-hygiene lever
 — a `/clear` at any gate wipes the transcript while the scratchpad preserves the run.
 
+On any fresh session (startup, `/clear`, resume, compaction) the bundled SessionStart hook
+(`hooks/resume-check.js`) reads `.planning/jarvis-run.md` and injects a one-line reminder that
+a run is in progress, so you can proactively offer to resume. It never auto-starts a phase —
+wait for the user, then follow the Resume section.
+
 ## Command-name fallback
 
 gstack commands are unprefixed slash commands (`/office-hours`, `/review`, `/qa`, `/ship`,
